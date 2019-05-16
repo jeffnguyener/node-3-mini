@@ -1,4 +1,4 @@
-module.exports {
+module.exports = {
     getPlanes: (req, res) => {
         const dbInstance = req.app.get('db');
         dbInstance.get_planes().then(planes => {
